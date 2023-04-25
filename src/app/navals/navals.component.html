@@ -1,0 +1,33 @@
+<ng-container *ngFor="let p of ds.Bookstore">
+    <div class="container" *ngIf="p.category =='Navals' ">
+        <div class="product-container">
+            <div class="image-container"><img [src]="p.Image" alt="" style="max-height: 170px; max-width: 200px;"></div>
+            <div>
+                <div class="name-container">
+                    <h3>{{p.title}} </h3>
+                </div>
+                <div class="detail-container">
+                    <div class="details">{{p.category}} </div>
+                    <div class="details"><b> price: </b> $ {{p.price}} </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</ng-container>
+
+<!-- <div class="container" *ngFor="let p of ds.Bookstore">
+    <div class="product-container">
+        <div class="image-container"><img [src]="p.Image" alt="" style="max-height: 170px; max-width: 200px;"></div>
+        <div>
+            <div class="name-container">
+                <h3>{{p.title}} </h3>
+            </div>
+            <div class="detail-container">
+                <div class="details">{{p.category}} </div>
+                <div class="details"><b> price: </b> $ {{p.price}} </div>
+            </div>
+        </div>
+
+    </div>
+</div> -->

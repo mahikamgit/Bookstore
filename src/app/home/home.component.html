@@ -1,0 +1,53 @@
+<H2>Most Popular Books</H2>
+<ng-container *ngFor="let p of ds.Bookstore">
+<div class="container" *ngIf="p.popular == 'true' ">
+    <div class="product-container">
+        <div class="image-container"><img [src]="p.Image" alt="" style="height: 170px; width: 240px;"></div>
+        <div>
+            <div class="name-container">
+                <h3>{{p.title}} </h3>
+            </div>
+            <div class="detail-container">
+                <div class="details">{{p.category}} </div>
+                <div class="details"><b> price: </b> $ {{p.price}} </div>
+                <div class="details"> Popular : {{p.popular}} </div>
+            </div>
+        </div>
+        <div class="product-buttons">
+            <button class="btn-wish" [routerLink]="['/homecard', p.id]" routerLinkActive="active">Details</button>
+            <button class="btn-cart">Cart</button>
+        </div> 
+    </div>
+</div>
+</ng-container>
+
+<H2>New Release Books</H2>
+<ng-container *ngFor="let p of ds.Bookstore">
+<div class="container" *ngIf="p.newrelease == 'true' ">
+    <div class="product-container">
+        <div class="image-container"><img [src]="p.Image" alt="" style="height: 170px; width: 240px;"></div>
+        <div>
+            <div class="name-container">
+                <h3>{{p.title}} </h3>
+            </div>
+            <div class="detail-container">
+                <div class="details">{{p.category}} </div>
+                <div class="details"><b> price: </b> $ {{p.price}} </div>
+                <div class="details"> Newrelease : {{p.newrelease}} </div>
+            </div>
+        </div>
+        <div class="product-buttons">
+            <button class="btn btn-wish" [routerLink]="['/homecard', p.id]" routerLinkActive="active">Details</button>
+            <button class="btn btn-cart">Cart</button>
+        </div>
+    </div>
+</div>
+</ng-container>
+
+<!-- <ng-container *ngFor="let item of movierating">
+    <div class="color" *ngIf="item.rating > '****' ">
+        <h1>{{item.moviename}} </h1>
+        <span>{{item.rating}} </span>
+    </div>
+</ng-container> -->
+

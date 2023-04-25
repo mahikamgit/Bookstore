@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    background-color: bisque;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+ text-decoration: none;
+}
+ul {
+    display: flex;
+    justify-content: flex-start;
+    height: 20px;
+}
+a {
+    color: rgb(57, 42, 42);
+    margin: 0px 10px;
+    padding: 10px 10px;
+    line-height: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.active {
+    background-color: chocolate;
+}

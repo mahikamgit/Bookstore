@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    background-color: darkgray;
+}
+
+ul li {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    justify-content: flex-start;
+
+    height: 20px;
+}
+a {
+    color: black;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    line-height: 20px;
+    font-weight: bold;
+    font-style: unset;
+}
+.active {
+    background-color: blue;
+}
+.search {
+    display: flex;
+    margin-left: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;   
+}
+.text {
+    border-radius: 20px;
+    width: 300px;
+}
+.opt {
+    width: 200px;
+}

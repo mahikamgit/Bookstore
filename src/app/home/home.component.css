@@ -1,0 +1,42 @@
+
+.container {
+    display: inline-block;
+}
+.product-container {
+   width: 270px;
+   height: 340px;
+   margin: 10px 20px;
+    background-color: bisque;
+   
+}
+.image-container {
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.name-container {
+    padding: 0px 15px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    font-size: 20px;
+}
+.detail-container {
+    padding: 0px 15px;
+}
+.product-buttons {
+    margin: 5px 15px;
+    padding: 5px 5px;
+}
+.btn-wish {
+    margin: auto 10px;
+    margin-left: -10px;
+    background-color: red;
+    color: whitesmoke;
+
+}
+.btn-cart {
+    margin: auto 10px;
+    margin-left: 110px;
+    background-color: green;
+    color: whitesmoke;
+} 
+
